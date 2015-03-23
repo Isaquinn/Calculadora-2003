@@ -379,7 +379,7 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(132, 56);
             this.button11.TabIndex = 54;
-            this.button11.Text = "RecursãoI";
+            this.button11.Text = "Fatorial I";
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click_1);
             // 
@@ -390,7 +390,7 @@
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(132, 56);
             this.button12.TabIndex = 55;
-            this.button12.Text = "RecursãoR";
+            this.button12.Text = "FatorialR";
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
