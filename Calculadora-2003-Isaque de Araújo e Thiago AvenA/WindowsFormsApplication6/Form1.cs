@@ -460,6 +460,86 @@ namespace WindowsFormsApplication6
         {
 
         }
+
+        private void button11_Click_1(object sender, EventArgs e)
+        {
+            x = double.Parse(Visor.Text);
+            result = x;
+            for (int i = 0; i < (x - 1); i++)
+            {
+                result = result * (x - (i + 1));
+
+
+            }
+            Visor.Text = Convert.ToString(" A recursão interativa de " + x + " é " + result);
+        }
+
+        public double rec(double hue)
+        {
+            if (hue == 0)
+                return 1;
+
+
+            return hue * rec(hue - 1);
+        }
+        
+        private void button12_Click(object sender, EventArgs e)
+        {
+            x = double.Parse(Visor.Text);
+            Visor.Text = Convert.ToString(" O fatorial Recursivo de " + x + " é " + rec(x));
+        }
+
+
+        public static double Fibonaccii(double m)
+        {
+            if (m <= 2)
+            {
+                return 1;
+            }
+
+
+
+            return Fibonaccii(m - 1) + Fibonaccii(m - 2);/*
+            if (m == 1 || m == 0)
+                return m;
+            else
+                return (Fibonaccii(m - 1) + Fibonaccii(m - 2));*/
+
+
+
+        }
+        private void button13_Click_1(object sender, EventArgs e)
+        {
+            x = Convert.ToDouble(Visor.Text);
+            for (double i = 0; i < x; i++)
+            {
+
+                Visor.Text = Convert.ToString(Fibonacci(i));
+            }
+        }
+
+        public static double Fibonacci(double n)
+        {
+            double a = 0;
+            double b = 1;
+
+
+            for (double i = 0; i < n; i++)
+            {
+                double temp = a + b;
+                a = b;
+                b = temp;
+            }
+            return b;
+        }
+        private void button14_Click(object sender, EventArgs e)
+        {
+            x = Convert.ToDouble(Visor.Text);
+
+
+            Visor.Text = Convert.ToString(Fibonaccii(x));
+
+        }
     }
 }
 

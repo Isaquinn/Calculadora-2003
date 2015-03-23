@@ -56,6 +56,10 @@
             this.CE = new System.Windows.Forms.Button();
             this.apagar = new System.Windows.Forms.Button();
             this.Conta = new System.Windows.Forms.TextBox();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Visor
@@ -64,7 +68,7 @@
             this.Visor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.Visor.Location = new System.Drawing.Point(10, 13);
             this.Visor.Name = "Visor";
-            this.Visor.Size = new System.Drawing.Size(511, 30);
+            this.Visor.Size = new System.Drawing.Size(654, 30);
             this.Visor.TabIndex = 0;
             this.Visor.TextChanged += new System.EventHandler(this.Visor_TextChanged);
             // 
@@ -363,17 +367,65 @@
             // 
             this.Conta.BackColor = System.Drawing.Color.AliceBlue;
             this.Conta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.Conta.Location = new System.Drawing.Point(10, 315);
+            this.Conta.Location = new System.Drawing.Point(0, 321);
             this.Conta.Name = "Conta";
-            this.Conta.Size = new System.Drawing.Size(511, 30);
+            this.Conta.Size = new System.Drawing.Size(664, 30);
             this.Conta.TabIndex = 53;
+            // 
+            // button11
+            // 
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button11.Location = new System.Drawing.Point(532, 52);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(132, 56);
+            this.button11.TabIndex = 54;
+            this.button11.Text = "RecursãoI";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click_1);
+            // 
+            // button12
+            // 
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button12.Location = new System.Drawing.Point(532, 114);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(132, 56);
+            this.button12.TabIndex = 55;
+            this.button12.Text = "RecursãoR";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button13
+            // 
+            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button13.Location = new System.Drawing.Point(532, 172);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(132, 56);
+            this.button13.TabIndex = 56;
+            this.button13.Text = "FibonacciI";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click_1);
+            // 
+            // button14
+            // 
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button14.Location = new System.Drawing.Point(532, 234);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(132, 56);
+            this.button14.TabIndex = 57;
+            this.button14.Text = "FibonacciR";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(535, 357);
+            this.ClientSize = new System.Drawing.Size(676, 357);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.button13);
+            this.Controls.Add(this.button12);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.Conta);
             this.Controls.Add(this.apagar);
             this.Controls.Add(this.CE);
@@ -441,6 +493,10 @@
         private System.Windows.Forms.Button CE;
         private System.Windows.Forms.Button apagar;
         private System.Windows.Forms.TextBox Conta;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
     }
 }
 
